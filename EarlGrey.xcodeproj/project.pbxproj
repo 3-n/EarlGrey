@@ -11,6 +11,7 @@
 		6F8818B222B86F530006932D /* GREYAssertionBlock+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8818B122B86F520006932D /* GREYAssertionBlock+Private.h */; };
 		A20847B422BC095B00DD3983 /* GREYTraversalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A20847B322BC095A00DD3983 /* GREYTraversalObject.m */; };
 		A277771E238FE215003E7373 /* GREYTraversalProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A277771C238FE215003E7373 /* GREYTraversalProperties.m */; };
+		BE46089E243DD60E002BECC9 /* EarlGrey.h in Headers */ = {isa = PBXBuildFile; fileRef = BE460890243DD60E002BECC9 /* EarlGrey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD1184D3212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1184D2212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m */; };
 		FD2E76EC2149E4580063EF7E /* GREYAppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E76EA2149E4580063EF7E /* GREYAppConfiguration.m */; };
 		FD2E76ED2149E4580063EF7E /* GREYAppConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = FD2E76EB2149E4580063EF7E /* GREYAppConfiguration.h */; };
@@ -398,6 +399,11 @@
 		A20847B322BC095A00DD3983 /* GREYTraversalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GREYTraversalObject.m; sourceTree = "<group>"; };
 		A277771C238FE215003E7373 /* GREYTraversalProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GREYTraversalProperties.m; sourceTree = "<group>"; };
 		A277771D238FE215003E7373 /* GREYTraversalProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GREYTraversalProperties.h; sourceTree = "<group>"; };
+		BE46088E243DD60E002BECC9 /* EarlGrey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EarlGrey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE460890243DD60E002BECC9 /* EarlGrey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EarlGrey.h; sourceTree = "<group>"; };
+		BE460891243DD60E002BECC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE46089B243DD60E002BECC9 /* EarlGreyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarlGreyTests.m; sourceTree = "<group>"; };
+		BE46089D243DD60E002BECC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD1184CB212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XCUIApplication+GREYEnvironment.h"; path = "XCTestCase/XCUIApplication+GREYEnvironment.h"; sourceTree = "<group>"; };
 		FD1184D2212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "XCUIApplication+GREYEnvironment.m"; path = "XCTestCase/XCUIApplication+GREYEnvironment.m"; sourceTree = "<group>"; };
 		FD2E76EA2149E4580063EF7E /* GREYAppConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GREYAppConfiguration.m; path = Config/GREYAppConfiguration.m; sourceTree = "<group>"; };
@@ -681,6 +687,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BE46088B243DD60E002BECC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD5048F520FB225100261CBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -717,6 +730,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE46088F243DD60E002BECC9 /* EarlGrey */ = {
+			isa = PBXGroup;
+			children = (
+				BE460890243DD60E002BECC9 /* EarlGrey.h */,
+				BE460891243DD60E002BECC9 /* Info.plist */,
+			);
+			path = EarlGrey;
+			sourceTree = "<group>";
+		};
+		BE46089A243DD60E002BECC9 /* EarlGreyTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE46089B243DD60E002BECC9 /* EarlGreyTests.m */,
+				BE46089D243DD60E002BECC9 /* Info.plist */,
+			);
+			path = EarlGreyTests;
+			sourceTree = "<group>";
+		};
 		FD2E76E92149E4450063EF7E /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -855,6 +886,8 @@
 				FDF9E03620F82D090005DCF2 /* UILib */,
 				FD623A4A20F957BE00049E81 /* AppFramework */,
 				FD5048F920FB225100261CBE /* TestLib */,
+				BE46088F243DD60E002BECC9 /* EarlGrey */,
+				BE46089A243DD60E002BECC9 /* EarlGreyTests */,
 				FD62391220F569D500049E81 /* Products */,
 				FD623BA520F95E3900049E81 /* Frameworks */,
 			);
@@ -867,6 +900,7 @@
 				FDF9E03520F82D090005DCF2 /* libUILib.a */,
 				FD623A4920F957BE00049E81 /* AppFramework.framework */,
 				FD5048F820FB225100261CBE /* libTestLib.a */,
+				BE46088E243DD60E002BECC9 /* EarlGrey.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1401,6 +1435,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BE460889243DD60E002BECC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE46089E243DD60E002BECC9 /* EarlGrey.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD623A4620F957BE00049E81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1485,6 +1527,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BE46088D243DD60E002BECC9 /* EarlGrey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE4608AB243DD60E002BECC9 /* Build configuration list for PBXNativeTarget "EarlGrey" */;
+			buildPhases = (
+				BE460889243DD60E002BECC9 /* Headers */,
+				BE46088A243DD60E002BECC9 /* Sources */,
+				BE46088B243DD60E002BECC9 /* Frameworks */,
+				BE46088C243DD60E002BECC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EarlGrey;
+			productName = EarlGrey;
+			productReference = BE46088E243DD60E002BECC9 /* EarlGrey.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		FD5048F720FB225100261CBE /* TestLib */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD50490720FB225100261CBE /* Build configuration list for PBXNativeTarget "TestLib" */;
@@ -1571,6 +1631,10 @@
 			attributes = {
 				LastUpgradeCheck = 1010;
 				TargetAttributes = {
+					BE46088D243DD60E002BECC9 = {
+						CreatedOnToolsVersion = 11.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					FD5048F720FB225100261CBE = {
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
@@ -1611,6 +1675,7 @@
 				FDF9E03420F82D090005DCF2 /* UILib */,
 				FD623A4820F957BE00049E81 /* AppFramework */,
 				FD5048F720FB225100261CBE /* TestLib */,
+				BE46088D243DD60E002BECC9 /* EarlGrey */,
 			);
 		};
 /* End PBXProject section */
@@ -1703,6 +1768,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BE46088C243DD60E002BECC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD623A4720F957BE00049E81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1733,6 +1805,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BE46088A243DD60E002BECC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD5048F420FB225100261CBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1935,6 +2014,54 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BE46089F243DD60E002BECC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EarlGrey/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.earlgrey.EarlGrey;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE4608A0243DD60E002BECC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EarlGrey/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.earlgrey.EarlGrey;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		FD5048FE20FB225100261CBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2291,6 +2418,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE4608AB243DD60E002BECC9 /* Build configuration list for PBXNativeTarget "EarlGrey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE46089F243DD60E002BECC9 /* Debug */,
+				BE4608A0243DD60E002BECC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FD50490720FB225100261CBE /* Build configuration list for PBXNativeTarget "TestLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
