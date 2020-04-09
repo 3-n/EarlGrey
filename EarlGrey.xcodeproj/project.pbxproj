@@ -2274,7 +2274,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
-				HEADER_SEARCH_PATHS = "Submodules/eDistantObject/**";
+				HEADER_SEARCH_PATHS = (
+					"Submodules/eDistantObject/**",
+					Submodules/fishhook/,
+				);
 				INFOPLIST_FILE = EarlGrey/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2301,7 +2304,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
-				HEADER_SEARCH_PATHS = "Submodules/eDistantObject/**";
+				HEADER_SEARCH_PATHS = (
+					"Submodules/eDistantObject/**",
+					Submodules/fishhook/,
+				);
 				INFOPLIST_FILE = EarlGrey/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
