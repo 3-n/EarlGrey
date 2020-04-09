@@ -138,6 +138,7 @@
 		BE460A8C243F47F1002BECC9 /* GREYWaitFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE8719A23241566007C5A5C /* GREYWaitFunctions.m */; };
 		BE460A8D243F47F1002BECC9 /* XCTestCase+GREYSystemAlertHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FD50490E20FB231A00261CBE /* XCTestCase+GREYSystemAlertHandler.m */; };
 		BE460A8E243F4A89002BECC9 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBE84FC22A21FBC0093062B /* libeDistantObject.a */; };
+		BE460A90243F4CA0002BECC9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE460A8F243F4CA0002BECC9 /* IOKit.framework */; };
 		FD1184D3212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1184D2212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m */; };
 		FD2E76EC2149E4580063EF7E /* GREYAppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E76EA2149E4580063EF7E /* GREYAppConfiguration.m */; };
 		FD2E76ED2149E4580063EF7E /* GREYAppConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = FD2E76EB2149E4580063EF7E /* GREYAppConfiguration.h */; };
@@ -530,6 +531,7 @@
 		BE460891243DD60E002BECC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE46089B243DD60E002BECC9 /* EarlGreyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarlGreyTests.m; sourceTree = "<group>"; };
 		BE46089D243DD60E002BECC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE460A8F243F4CA0002BECC9 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		FD1184CB212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XCUIApplication+GREYEnvironment.h"; path = "XCTestCase/XCUIApplication+GREYEnvironment.h"; sourceTree = "<group>"; };
 		FD1184D2212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "XCUIApplication+GREYEnvironment.m"; path = "XCTestCase/XCUIApplication+GREYEnvironment.m"; sourceTree = "<group>"; };
 		FD2E76EA2149E4580063EF7E /* GREYAppConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GREYAppConfiguration.m; path = Config/GREYAppConfiguration.m; sourceTree = "<group>"; };
@@ -817,6 +819,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE460A90243F4CA0002BECC9 /* IOKit.framework in Frameworks */,
 				BE460A8E243F4A89002BECC9 /* libeDistantObject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1442,6 +1445,7 @@
 		FD623BA520F95E3900049E81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE460A8F243F4CA0002BECC9 /* IOKit.framework */,
 				FD50493E20FB25BC00261CBE /* XCTest.framework */,
 				FD623BA620F95E3900049E81 /* IOKit.framework */,
 			);
