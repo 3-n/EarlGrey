@@ -77,7 +77,6 @@
 		BE460A4F243F47F0002BECC9 /* GREYHostApplicationDistantObject+GREYTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FD623B0F20F95A5300049E81 /* GREYHostApplicationDistantObject+GREYTestHelper.m */; };
 		BE460A50243F47F0002BECC9 /* GREYHostBackgroundDistantObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FD623B1420F95A5400049E81 /* GREYHostBackgroundDistantObject.m */; };
 		BE460A51243F47F0002BECC9 /* GREYHostBackgroundDistantObject+GREYApp.m in Sources */ = {isa = PBXBuildFile; fileRef = FD623B1220F95A5400049E81 /* GREYHostBackgroundDistantObject+GREYApp.m */; };
-		BE460A52243F47F0002BECC9 /* GREYTestStub.m in Sources */ = {isa = PBXBuildFile; fileRef = FD623B1120F95A5300049E81 /* GREYTestStub.m */; };
 		BE460A53243F47F0002BECC9 /* GREYCAAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD623B0420F9595300049E81 /* GREYCAAnimationDelegate.m */; };
 		BE460A54243F47F0002BECC9 /* GREYNSURLConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD623B0320F9595300049E81 /* GREYNSURLConnectionDelegate.m */; };
 		BE460A55243F47F0002BECC9 /* GREYSurrogateDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD623B0220F9595300049E81 /* GREYSurrogateDelegate.m */; };
@@ -2003,7 +2002,6 @@
 				BE460A4F243F47F0002BECC9 /* GREYHostApplicationDistantObject+GREYTestHelper.m in Sources */,
 				BE460A50243F47F0002BECC9 /* GREYHostBackgroundDistantObject.m in Sources */,
 				BE460A51243F47F0002BECC9 /* GREYHostBackgroundDistantObject+GREYApp.m in Sources */,
-				BE460A52243F47F0002BECC9 /* GREYTestStub.m in Sources */,
 				BE460A94243F91D3002BECC9 /* GREYTestConfiguration.m in Sources */,
 				BE460A53243F47F0002BECC9 /* GREYCAAnimationDelegate.m in Sources */,
 				BE460A54243F47F0002BECC9 /* GREYNSURLConnectionDelegate.m in Sources */,
