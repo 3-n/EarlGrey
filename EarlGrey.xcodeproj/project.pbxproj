@@ -131,7 +131,6 @@
 		BE460A86243F47F1002BECC9 /* GREYElementInteractionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD50492220FB239800261CBE /* GREYElementInteractionProxy.m */; };
 		BE460A87243F47F1002BECC9 /* XCUIApplication+GREYTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FD50492420FB239800261CBE /* XCUIApplication+GREYTest.m */; };
 		BE460A88243F47F1002BECC9 /* GREYTestApplicationDistantObject+GREYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A826221F18A5800CA3ADF /* GREYTestApplicationDistantObject+GREYLogger.m */; };
-		BE460A89243F47F1002BECC9 /* GREYHostStub.m in Sources */ = {isa = PBXBuildFile; fileRef = FD50491C20FB238300261CBE /* GREYHostStub.m */; };
 		BE460A8A243F47F1002BECC9 /* GREYTestApplicationDistantObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FD50491D20FB238300261CBE /* GREYTestApplicationDistantObject.m */; };
 		BE460A8B243F47F1002BECC9 /* GREYCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = FD50491920FB237100261CBE /* GREYCondition.m */; };
 		BE460A8C243F47F1002BECC9 /* GREYWaitFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE8719A23241566007C5A5C /* GREYWaitFunctions.m */; };
@@ -2059,7 +2058,6 @@
 				BE460A86243F47F1002BECC9 /* GREYElementInteractionProxy.m in Sources */,
 				BE460A87243F47F1002BECC9 /* XCUIApplication+GREYTest.m in Sources */,
 				BE460A88243F47F1002BECC9 /* GREYTestApplicationDistantObject+GREYLogger.m in Sources */,
-				BE460A89243F47F1002BECC9 /* GREYHostStub.m in Sources */,
 				BE460A8A243F47F1002BECC9 /* GREYTestApplicationDistantObject.m in Sources */,
 				BE460A8B243F47F1002BECC9 /* GREYCondition.m in Sources */,
 				BE460A8C243F47F1002BECC9 /* GREYWaitFunctions.m in Sources */,
