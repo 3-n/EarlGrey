@@ -35,9 +35,13 @@
   static GREYConfiguration *instance;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-    instance = GREYCreateConfiguration();
+    instance = [[self class] GREYCreateConfiguration];
   });
   return instance;
+}
+
++ (GREYConfiguration *)GREYCreateConfiguration {
+  return nil;
 }
 
 - (NSDictionary *)mergedConfiguration {

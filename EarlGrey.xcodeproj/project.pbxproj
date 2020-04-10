@@ -119,7 +119,6 @@
 		BE460A79243F47F1002BECC9 /* GREYTapAction.m in Sources */ = {isa = PBXBuildFile; fileRef = FD623A6D20F958C200049E81 /* GREYTapAction.m */; };
 		BE460A7A243F47F1002BECC9 /* GREYTapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FD623A5320F958C000049E81 /* GREYTapper.m */; };
 		BE460A7B243F47F1002BECC9 /* GREYRemoteExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE871962322D9F6007C5A5C /* GREYRemoteExecutor.m */; };
-		BE460A7C243F47F1002BECC9 /* GREYTestConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E76F02149E4860063EF7E /* GREYTestConfiguration.m */; };
 		BE460A7D243F47F1002BECC9 /* XCUIApplication+GREYEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1184D2212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m */; };
 		BE460A7E243F47F1002BECC9 /* GREYTestCaseInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD50493820FB23E500261CBE /* GREYTestCaseInvocation.m */; };
 		BE460A7F243F47F1002BECC9 /* XCTestCase+GREYTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FD50493920FB23E500261CBE /* XCTestCase+GREYTest.m */; };
@@ -139,10 +138,11 @@
 		BE460A8D243F47F1002BECC9 /* XCTestCase+GREYSystemAlertHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FD50490E20FB231A00261CBE /* XCTestCase+GREYSystemAlertHandler.m */; };
 		BE460A8E243F4A89002BECC9 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBE84FC22A21FBC0093062B /* libeDistantObject.a */; };
 		BE460A90243F4CA0002BECC9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE460A8F243F4CA0002BECC9 /* IOKit.framework */; };
+		BE460A94243F91D3002BECC9 /* GREYTestConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E76F02149E4860063EF7E /* GREYTestConfiguration.m */; };
+		BEA9D6BB2440A5AC0050ACC8 /* GREYAppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E76EA2149E4580063EF7E /* GREYAppConfiguration.m */; };
+		BEA9D6C42440A5B00050ACC8 /* GREYTestConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E76F02149E4860063EF7E /* GREYTestConfiguration.m */; };
 		FD1184D3212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1184D2212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m */; };
-		FD2E76EC2149E4580063EF7E /* GREYAppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E76EA2149E4580063EF7E /* GREYAppConfiguration.m */; };
 		FD2E76ED2149E4580063EF7E /* GREYAppConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = FD2E76EB2149E4580063EF7E /* GREYAppConfiguration.h */; };
-		FD2E76F12149E4860063EF7E /* GREYTestConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E76F02149E4860063EF7E /* GREYTestConfiguration.m */; };
 		FD3A825121F187C800CA3ADF /* GREYAssertionBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A825021F187C800CA3ADF /* GREYAssertionBlock.m */; };
 		FD3A825621F187FD00CA3ADF /* GREYBaseMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A825221F187FA00CA3ADF /* GREYBaseMatcher.m */; };
 		FD3A825721F187FD00CA3ADF /* GREYElementMatcherBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A825321F187FB00CA3ADF /* GREYElementMatcherBlock.m */; };
@@ -2005,6 +2005,7 @@
 				BE460A50243F47F0002BECC9 /* GREYHostBackgroundDistantObject.m in Sources */,
 				BE460A51243F47F0002BECC9 /* GREYHostBackgroundDistantObject+GREYApp.m in Sources */,
 				BE460A52243F47F0002BECC9 /* GREYTestStub.m in Sources */,
+				BE460A94243F91D3002BECC9 /* GREYTestConfiguration.m in Sources */,
 				BE460A53243F47F0002BECC9 /* GREYCAAnimationDelegate.m in Sources */,
 				BE460A54243F47F0002BECC9 /* GREYNSURLConnectionDelegate.m in Sources */,
 				BE460A55243F47F0002BECC9 /* GREYSurrogateDelegate.m in Sources */,
@@ -2046,7 +2047,6 @@
 				BE460A79243F47F1002BECC9 /* GREYTapAction.m in Sources */,
 				BE460A7A243F47F1002BECC9 /* GREYTapper.m in Sources */,
 				BE460A7B243F47F1002BECC9 /* GREYRemoteExecutor.m in Sources */,
-				BE460A7C243F47F1002BECC9 /* GREYTestConfiguration.m in Sources */,
 				BE460A7D243F47F1002BECC9 /* XCUIApplication+GREYEnvironment.m in Sources */,
 				BE460A7E243F47F1002BECC9 /* GREYTestCaseInvocation.m in Sources */,
 				BE460A7F243F47F1002BECC9 /* XCTestCase+GREYTest.m in Sources */,
@@ -2090,8 +2090,8 @@
 				FD50493320FB23AE00261CBE /* GREYFailureFormatter.m in Sources */,
 				FD50492B20FB239900261CBE /* XCUIApplication+GREYTest.m in Sources */,
 				FD50493C20FB23E500261CBE /* GREYTestCaseInvocation.m in Sources */,
+				BEA9D6C42440A5B00050ACC8 /* GREYTestConfiguration.m in Sources */,
 				FD50492D20FB239900261CBE /* EarlGrey.m in Sources */,
-				FD2E76F12149E4860063EF7E /* GREYTestConfiguration.m in Sources */,
 				FD50492A20FB239900261CBE /* GREYElementInteractionProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2139,6 +2139,7 @@
 				FD623A8B20F958C200049E81 /* GREYTapAction.m in Sources */,
 				FD623AB920F9590800049E81 /* NSTimer+GREYApp.m in Sources */,
 				FD623B4720F95A9C00049E81 /* GREYNSTimerIdlingResource.m in Sources */,
+				BEA9D6BB2440A5AC0050ACC8 /* GREYAppConfiguration.m in Sources */,
 				FD41291723D97C230042A585 /* GREYElementFilter.m in Sources */,
 				FD623B8B20F95B1500049E81 /* GREYRunLoopSpinner.m in Sources */,
 				FD623A7C20F958C200049E81 /* GREYPinchAction.m in Sources */,
@@ -2175,7 +2176,6 @@
 				FD623A8A20F958C200049E81 /* GREYChangeStepperAction.m in Sources */,
 				FD623B8320F95B1500049E81 /* GREYAppStateTrackerObject.m in Sources */,
 				FD3A826421F18A5900CA3ADF /* GREYTestApplicationDistantObject+GREYLogger.m in Sources */,
-				FD2E76EC2149E4580063EF7E /* GREYAppConfiguration.m in Sources */,
 				FD623A7F20F958C200049E81 /* GREYBaseAction.m in Sources */,
 				FD623B4920F95A9C00049E81 /* GREYOperationQueueIdlingResource.m in Sources */,
 				FD623B4C20F95A9C00049E81 /* GREYManagedObjectContextIdlingResource.m in Sources */,

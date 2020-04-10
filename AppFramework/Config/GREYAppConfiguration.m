@@ -22,8 +22,6 @@
 #import "GREYTestConfiguration.h"
 #import "NSObject+EDOValueObject.h"
 
-GREYConfiguration *GREYCreateConfiguration(void) { return [[GREYAppConfiguration alloc] init]; }
-
 @implementation GREYAppConfiguration {
   /**
    *  The remote test configuration that contains the source of truth data.
@@ -54,6 +52,10 @@ GREYConfiguration *GREYCreateConfiguration(void) { return [[GREYAppConfiguration
     [self updateConfiguration:[[_testConfiguration returnByValue] mergedConfiguration]];
   }
   return self;
+}
+
++ (GREYConfiguration *)GREYCreateConfiguration {
+  return [[GREYAppConfiguration alloc] init];
 }
 
 - (NSDictionary *)mergedConfiguration {

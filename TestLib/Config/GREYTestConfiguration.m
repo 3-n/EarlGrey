@@ -25,8 +25,6 @@
 #import "GREYLogger.h"
 #import "NSObject+EDOValueObject.h"
 
-GREYConfiguration *GREYCreateConfiguration(void) { return [[GREYTestConfiguration alloc] init]; }
-
 @implementation GREYTestConfiguration {
   NSMutableDictionary
       *_mergedConfiguration;  // Dict for storing the merged default/overridden dicts
@@ -59,6 +57,10 @@ GREYConfiguration *GREYCreateConfiguration(void) { return [[GREYTestConfiguratio
     [self setDefaultValue:@(kGREYIdle) forConfigKey:kGREYConfigKeyIgnoreAppStates];
   }
   return self;
+}
+
++ (GREYConfiguration *)GREYCreateConfiguration {
+  return [[GREYTestConfiguration alloc] init];
 }
 
 - (NSDictionary<NSString *, id> *)mergedConfiguration {

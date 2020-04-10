@@ -22,7 +22,6 @@
 // Indicates whether the merged configuration was invalidated due to a change
 // in the default or overridden configurations
 @property(nonatomic) BOOL needsMerge;
-@end
-
 /** Implemented in the subclass to instantiate the underlying configuration. */
-GREY_EXTERN GREYConfiguration *GREYCreateConfiguration(void);
++ (GREYConfiguration *)GREYCreateConfiguration;
+@end
