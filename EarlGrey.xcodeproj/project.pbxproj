@@ -137,6 +137,13 @@
 		BE460A8E243F4A89002BECC9 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBE84FC22A21FBC0093062B /* libeDistantObject.a */; };
 		BE460A90243F4CA0002BECC9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE460A8F243F4CA0002BECC9 /* IOKit.framework */; };
 		BE460A94243F91D3002BECC9 /* GREYTestConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E76F02149E4860063EF7E /* GREYTestConfiguration.m */; };
+		BE5A574E2440C21F007DB28C /* EarlGreySwift.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5A574C2440C21F007DB28C /* EarlGreySwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE5A57542440C233007DB28C /* EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE46088E243DD60E002BECC9 /* EarlGrey.framework */; };
+		BE5A57562440C27C007DB28C /* EarlGrey.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE46088E243DD60E002BECC9 /* EarlGrey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE5A575B2440C48D007DB28C /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A57432440B392007DB28C /* EarlGrey.swift */; };
+		BE5A575C2445D97C007DB28C /* GREYMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = FD6239CD20F56C7100049E81 /* GREYMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE5A575F2445DB32007DB28C /* GREYMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = FD623B5620F95B0200049E81 /* GREYMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE5A57602445DD2D007DB28C /* GREYFrameworkException.h in Headers */ = {isa = PBXBuildFile; fileRef = FD6239C720F56C5E00049E81 /* GREYFrameworkException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEA9D6BB2440A5AC0050ACC8 /* GREYAppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E76EA2149E4580063EF7E /* GREYAppConfiguration.m */; };
 		BEA9D6C42440A5B00050ACC8 /* GREYTestConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2E76F02149E4860063EF7E /* GREYTestConfiguration.m */; };
 		FD1184D3212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1184D2212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m */; };
@@ -364,6 +371,13 @@
 			remoteGlobalIDString = C52D858C2220C44300E86E60;
 			remoteInfo = DeviceLib;
 		};
+		BE5A575D2445DA40007DB28C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD62390920F569D500049E81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE46088D243DD60E002BECC9;
+			remoteInfo = EarlGrey;
+		};
 		FD623BD820F9726300049E81 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FD62390920F569D500049E81 /* Project object */;
@@ -486,6 +500,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BE5A57552440C263007DB28C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE5A57562440C27C007DB28C /* EarlGrey.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD5048F620FB225100261CBE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -530,6 +554,10 @@
 		BE46089B243DD60E002BECC9 /* EarlGreyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarlGreyTests.m; sourceTree = "<group>"; };
 		BE46089D243DD60E002BECC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE460A8F243F4CA0002BECC9 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE5A57432440B392007DB28C /* EarlGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
+		BE5A574A2440C21F007DB28C /* EarlGreySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EarlGreySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5A574C2440C21F007DB28C /* EarlGreySwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EarlGreySwift.h; sourceTree = "<group>"; };
+		BE5A574D2440C21F007DB28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD1184CB212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XCUIApplication+GREYEnvironment.h"; path = "XCTestCase/XCUIApplication+GREYEnvironment.h"; sourceTree = "<group>"; };
 		FD1184D2212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "XCUIApplication+GREYEnvironment.m"; path = "XCTestCase/XCUIApplication+GREYEnvironment.m"; sourceTree = "<group>"; };
 		FD2E76EA2149E4580063EF7E /* GREYAppConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GREYAppConfiguration.m; path = Config/GREYAppConfiguration.m; sourceTree = "<group>"; };
@@ -822,6 +850,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE5A57472440C21F007DB28C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5A57542440C233007DB28C /* EarlGrey.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD5048F520FB225100261CBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -863,6 +899,7 @@
 			children = (
 				BE460890243DD60E002BECC9 /* EarlGrey.h */,
 				BE460891243DD60E002BECC9 /* Info.plist */,
+				BE5A57432440B392007DB28C /* EarlGrey.swift */,
 			);
 			path = EarlGrey;
 			sourceTree = "<group>";
@@ -874,6 +911,15 @@
 				BE46089D243DD60E002BECC9 /* Info.plist */,
 			);
 			path = EarlGreyTests;
+			sourceTree = "<group>";
+		};
+		BE5A574B2440C21F007DB28C /* EarlGreySwift */ = {
+			isa = PBXGroup;
+			children = (
+				BE5A574C2440C21F007DB28C /* EarlGreySwift.h */,
+				BE5A574D2440C21F007DB28C /* Info.plist */,
+			);
+			path = EarlGreySwift;
 			sourceTree = "<group>";
 		};
 		FD2E76E92149E4450063EF7E /* Config */ = {
@@ -1016,6 +1062,7 @@
 				FD5048F920FB225100261CBE /* TestLib */,
 				BE46088F243DD60E002BECC9 /* EarlGrey */,
 				BE46089A243DD60E002BECC9 /* EarlGreyTests */,
+				BE5A574B2440C21F007DB28C /* EarlGreySwift */,
 				FD62391220F569D500049E81 /* Products */,
 				FD623BA520F95E3900049E81 /* Frameworks */,
 			);
@@ -1029,6 +1076,7 @@
 				FD623A4920F957BE00049E81 /* AppFramework.framework */,
 				FD5048F820FB225100261CBE /* libTestLib.a */,
 				BE46088E243DD60E002BECC9 /* EarlGrey.framework */,
+				BE5A574A2440C21F007DB28C /* EarlGreySwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1569,6 +1617,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE46089E243DD60E002BECC9 /* EarlGrey.h in Headers */,
+				BE5A575C2445D97C007DB28C /* GREYMatcher.h in Headers */,
+				BE5A575F2445DB32007DB28C /* GREYMatchers.h in Headers */,
+				BE5A57602445DD2D007DB28C /* GREYFrameworkException.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5A57452440C21F007DB28C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5A574E2440C21F007DB28C /* EarlGreySwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1674,6 +1733,26 @@
 			productReference = BE46088E243DD60E002BECC9 /* EarlGrey.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		BE5A57492440C21F007DB28C /* EarlGreySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5A574F2440C21F007DB28C /* Build configuration list for PBXNativeTarget "EarlGreySwift" */;
+			buildPhases = (
+				BE5A57452440C21F007DB28C /* Headers */,
+				BE5A57462440C21F007DB28C /* Sources */,
+				BE5A57472440C21F007DB28C /* Frameworks */,
+				BE5A57482440C21F007DB28C /* Resources */,
+				BE5A57552440C263007DB28C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE5A575E2445DA40007DB28C /* PBXTargetDependency */,
+			);
+			name = EarlGreySwift;
+			productName = EarlGreySwift;
+			productReference = BE5A574A2440C21F007DB28C /* EarlGreySwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		FD5048F720FB225100261CBE /* TestLib */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD50490720FB225100261CBE /* Build configuration list for PBXNativeTarget "TestLib" */;
@@ -1762,6 +1841,11 @@
 				TargetAttributes = {
 					BE46088D243DD60E002BECC9 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+						ProvisioningStyle = Automatic;
+					};
+					BE5A57492440C21F007DB28C = {
+						CreatedOnToolsVersion = 11.2.1;
 						ProvisioningStyle = Automatic;
 					};
 					FD5048F720FB225100261CBE = {
@@ -1805,6 +1889,7 @@
 				FD623A4820F957BE00049E81 /* AppFramework */,
 				FD5048F720FB225100261CBE /* TestLib */,
 				BE46088D243DD60E002BECC9 /* EarlGrey */,
+				BE5A57492440C21F007DB28C /* EarlGreySwift */,
 			);
 		};
 /* End PBXProject section */
@@ -1898,6 +1983,13 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		BE46088C243DD60E002BECC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5A57482440C21F007DB28C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2061,6 +2153,14 @@
 				BE460A8C243F47F1002BECC9 /* GREYWaitFunctions.m in Sources */,
 				BE460A8D243F47F1002BECC9 /* XCTestCase+GREYSystemAlertHandler.m in Sources */,
 				BE460A09243F47D1002BECC9 /* fishhook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5A57462440C21F007DB28C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5A575B2440C48D007DB28C /* EarlGrey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2238,6 +2338,11 @@
 			name = DeviceLib;
 			targetProxy = 804D3FD022B99055001D3F3A /* PBXContainerItemProxy */;
 		};
+		BE5A575E2445DA40007DB28C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE46088D243DD60E002BECC9 /* EarlGrey */;
+			targetProxy = BE5A575D2445DA40007DB28C /* PBXContainerItemProxy */;
+		};
 		FD623BD920F9726300049E81 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FDF9E03420F82D090005DCF2 /* UILib */;
@@ -2269,6 +2374,7 @@
 		BE46089F243DD60E002BECC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2279,17 +2385,21 @@
 				HEADER_SEARCH_PATHS = (
 					"Submodules/eDistantObject/**",
 					Submodules/fishhook/,
+					"../**",
 				);
 				INFOPLIST_FILE = EarlGrey/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = EarlGrey/EarlGrey.modulemap;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.earlgrey.EarlGrey;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2299,6 +2409,7 @@
 		BE4608A0243DD60E002BECC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2309,15 +2420,75 @@
 				HEADER_SEARCH_PATHS = (
 					"Submodules/eDistantObject/**",
 					Submodules/fishhook/,
+					"../**",
 				);
 				INFOPLIST_FILE = EarlGrey/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = EarlGrey/EarlGrey.modulemap;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.earlgrey.EarlGrey;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE5A57502440C21F007DB28C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "../**";
+				INFOPLIST_FILE = EarlGreySwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.earlgrey.EarlGreySwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE5A57512440C21F007DB28C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "../**";
+				INFOPLIST_FILE = EarlGreySwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.earlgrey.EarlGreySwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2685,6 +2856,15 @@
 			buildConfigurations = (
 				BE46089F243DD60E002BECC9 /* Debug */,
 				BE4608A0243DD60E002BECC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE5A574F2440C21F007DB28C /* Build configuration list for PBXNativeTarget "EarlGreySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5A57502440C21F007DB28C /* Debug */,
+				BE5A57512440C21F007DB28C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

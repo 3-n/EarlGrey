@@ -15,4 +15,21 @@ FOUNDATION_EXPORT const unsigned char EarlGreyVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <EarlGrey/PublicHeader.h>
 
-
+#import "GREYAction.h"
+#import "GREYActionsShorthand.h"
+#import "GREYInteraction.h"
+#import "GREYHostBackgroundDistantObject+GREYApp.h"
+#import "GREYMatchersShorthand.h"
+#import "GREYAssertionBlock.h"
+#import "GREYConfiguration.h"
+#import "GREYHostApplicationDistantObject.h"
+#import "GREYTestApplicationDistantObject.h"
+#import "GREYErrorConstants.h"
+#import "GREYFailureHandler.h"
+#import "GREYFrameworkException.h"
+#import "GREYDefines.h"
+#import "GREYElementMatcherBlock.h"
+#import "GREYMatcher.h"
+#import "XCTestCase+GREYSystemAlertHandler.h"
+#import "GREYAssertionDefines.h"
+#import "GREYCondition.h"
